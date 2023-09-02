@@ -101,7 +101,7 @@
 
 - ---
 
-cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanarak paketleri güncellediğini görebiliriz.
+- cat /etc/apt/sources.list komutu ile apt'nin internetteki hangi kaynaklara bağlanarak paketleri güncellediğini görebiliriz.
  
 - ---
 # dpkg PROGRAMI:
