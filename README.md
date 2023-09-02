@@ -22,7 +22,7 @@
 
 - ---
 #### update:
-- update, paketlerin listesini günceller. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt update'
+- update, paketlerin listesini günceller. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt update`
 
 Örnek: Aşağıdaki örnekte update komutunu yönetici yetkisi olmadan yapmaya çalıştık. Ama olmadı.
 
@@ -40,7 +40,7 @@
 - ---
 #### install:
 
-- install, paketi yükler. Sadece yönetici izni(root) ile kullanabiliriz.  Örneğin; 'sudo apt install paket_ismi'
+- install, paketi yükler. Sadece yönetici izni(root) ile kullanabiliriz.  Örneğin; `sudo apt install paket_ismi`
 
 Örnek: Aşağıdaki örnekte vlc uygulamasını install komutu ile yükledik. 
   
@@ -51,7 +51,7 @@
 - ---
 #### remove:
  
-- remove, paketi kaldırır. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt remove paket_ismi'
+- remove, paketi kaldırır. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt remove paket_ismi`
 
 Örnek: Aşağıdaki örnekte yüklü olan vlc uygulamasını remove komutu ile kaldırdık. 
 
@@ -62,7 +62,7 @@
 - ---
 #### autoremove:
  
-- autoremove, gereksiz paketleri kaldırır. remove komutundan sonra kullanılması önerilir. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt autoremove'
+- autoremove, gereksiz paketleri kaldırır. remove komutundan sonra kullanılması önerilir. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt autoremove`
 
 Örnek: Aşağıdaki örnekte yüklü olan vlc uygulamasını remove komutu ile kaldırmıştık. vlc uygulamasından geriye gereksiz kalan paketleri kaldırdık.
 
@@ -73,7 +73,7 @@
 - ---
 #### purge:
  
-- purge, hem yüklü olan uygulamayı siler hem de bu uygulamanın ayalarını siler. Ama yine de tüm paketleri silinmez. Bundan dolayı autoremove komutunu kullanmak lazım. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt purge paket_ismi'
+- purge, hem yüklü olan uygulamayı siler hem de bu uygulamanın ayalarını siler. Ama yine de tüm paketleri silinmez. Bundan dolayı autoremove komutunu kullanmak lazım. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt purge paket_ismi`
 
 Örnek: Aşağıdaki örnekte ikinci yol olan purge komutu ile vlc uygulamasını kaldırıyoruz. Ama önceden ben vlc uygulamasını sildiğim için bulunmamaktadır uyarısı vermiştir. 
 
@@ -84,7 +84,7 @@
 - ---
 #### upgrade:
  
-- upgrade, kurulu paketleri günceller. Ama çok paket olduğu için bu iş çok uzun sürer. Örneğin; 'sudo apt upgrade'
+- upgrade, kurulu paketleri günceller. Ama çok paket olduğu için bu iş çok uzun sürer. Örneğin; `sudo apt upgrade`
 
 <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/5d8d32e8-54f5-4397-9d50-874d711dc7e1"/>
@@ -113,7 +113,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 - İlk başta leafpad'in paketinin yüklü olduğu deb uzantılı dosyayı indirdik. 
 - Aşağıdaki görselde kırmızı ok ile gösterdiğim gibi cd komutu ile deb uzantılı dosyanın olduğu dizine gidiyoruz.
 - Sonra ls komutu ile o dizinde bulunan dosyaları görüntülüyoruz.
-- Aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü 'dpkg -i leafpad_0.8.18.1-5_amd64.deb' paketini yüklerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket yüklenecektir. Ve leafpad'imiz kurulmuş olacak. 
+- Aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü `dpkg -i leafpad_0.8.18.1-5_amd64.deb` paketini yüklerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket yüklenecektir. Ve leafpad'imiz kurulmuş olacak. 
 
 <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/bf845942-04f4-4439-8316-841d559b8807"/> 
@@ -125,7 +125,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 
 Örnek: Aşağıdaki örnekte leafpad'i kaldıracağız.
 - İlk başta aşağıdaki görselde kırmızı ok ile gösterdiğim satırda dpkg -l komutu ile dpkg paketli tüm dosyalar ekranda gözükmesin diye grep leafpad komutunu da ekleyip sadece leafpad'e ait olan dizin ekrana geliyor.
-- Sonra aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü 'dpkg -r leafpad' paketini silerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket kaldırılacaktır. Ve leafpad'imiz silinmiş olacak. 
+- Sonra aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü `dpkg -r leafpad` paketini silerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket kaldırılacaktır. Ve leafpad'imiz silinmiş olacak. 
 
 <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/69341bf3-231e-4e02-9d1b-bbd9abfba3b4"/> 
