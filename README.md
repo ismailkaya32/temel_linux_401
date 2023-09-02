@@ -191,7 +191,8 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
  <br/>
 
 <div align="center">
-	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/0c25a10a-02d2-4eba-939e-b3e4ad23414b"/> 
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/0278dfd1-df60-4411-84b3-3acc92f20b2e"/>
+
 </div>
 
  <br/>
