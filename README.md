@@ -62,7 +62,7 @@
 - ---
 #### autoremove:
  
-- autoremove, gereksiz paketleri kaldırır. remove komutundan sonra kullanılması önerilir. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt autoremove`
+- autoremove, gereksiz paketleri kaldırır. remove komutundan sonra kullanılması önerilir. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin;  `sudo apt autoremove`
 
 Örnek: Aşağıdaki örnekte yüklü olan vlc uygulamasını remove komutu ile kaldırmıştık. vlc uygulamasından geriye gereksiz kalan paketleri kaldırdık.
 
@@ -73,7 +73,7 @@
 - ---
 #### purge:
  
-- purge, hem yüklü olan uygulamayı siler hem de bu uygulamanın ayalarını siler. Ama yine de tüm paketleri silinmez. Bundan dolayı autoremove komutunu kullanmak lazım. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; `sudo apt purge paket_ismi`
+- purge, hem yüklü olan uygulamayı siler hem de bu uygulamanın ayalarını siler. Ama yine de tüm paketleri silinmez. Bundan dolayı autoremove komutunu kullanmak lazım. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin;  `sudo apt purge paket_ismi`
 
 Örnek: Aşağıdaki örnekte ikinci yol olan purge komutu ile vlc uygulamasını kaldırıyoruz. Ama önceden ben vlc uygulamasını sildiğim için bulunmamaktadır uyarısı vermiştir. 
 
@@ -84,7 +84,7 @@
 - ---
 #### upgrade:
  
-- upgrade, kurulu paketleri günceller. Ama çok paket olduğu için bu iş çok uzun sürer. Örneğin; `sudo apt upgrade`
+- upgrade, kurulu paketleri günceller. Ama çok paket olduğu için bu iş çok uzun sürer. Örneğin;  `sudo apt upgrade`
 
 <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/5d8d32e8-54f5-4397-9d50-874d711dc7e1"/>
