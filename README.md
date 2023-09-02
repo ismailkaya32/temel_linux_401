@@ -1,6 +1,6 @@
 ### **Komutlara giriş 4:**
 
- ## PAKET KAVRAMI
+ # PAKET KAVRAMI:
   
  <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/8e105bdc-9cee-4ede-979b-fca1030aaa58"/>
@@ -8,20 +8,20 @@
 
  <br/>
 
-### PAKET YÖNETİCİSİ KAVRAMI
+# PAKET YÖNETİCİSİ KAVRAMI:
 
 - Paket yöneticileri, bilgisayarımıza bir paketi kolaylıkla kurmamızı, kaldırmamızı ve yapılandırmamızı sağlayan sistemlerdir.
 
 <br/>
 
-###   <div align="center">    apt Paket Yöneticisi  </div> 
+## apt Paket Yöneticisi:
 
   <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/7a493149-7d5c-496e-9bff-b2c857cc77ee"/> 
 </div> 
 
- <br/>
-
+- ---
+#### update:
 - update, paketlerin listesini günceller. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt update'
 
 Örnek: Aşağıdaki örnekte update komutunu yönetici yetkisi olmadan yapmaya çalıştık. Ama olmadı.
@@ -37,7 +37,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/b1a657cb-23db-4298-aaa5-88604e272f84"/>
 </div>
 
- <br/>
+- ---
+#### install:
 
 - install, paketi yükler. Sadece yönetici izni(root) ile kullanabiliriz.  Örneğin; 'sudo apt install paket_ismi'
 
@@ -47,7 +48,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/5a342254-3673-4028-b299-af6f263e53bc"/>
 </div>
 
- <br/>
+- ---
+#### remove:
  
 - remove, paketi kaldırır. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt remove paket_ismi'
 
@@ -57,7 +59,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/4b4d0d3d-11d1-4860-b15c-2db4062d04a6"/>
 </div>
 
- <br/>
+- ---
+#### autoremove:
  
 - autoremove, gereksiz paketleri kaldırır. remove komutundan sonra kullanılması önerilir. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt autoremove'
 
@@ -67,7 +70,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/9f1552f2-1ace-450b-9728-70243d09550e"/>
 </div>
 
- <br/>
+- ---
+#### purge:
  
 - purge, hem yüklü olan uygulamayı siler hem de bu uygulamanın ayalarını siler. Ama yine de tüm paketleri silinmez. Bundan dolayı autoremove komutunu kullanmak lazım. Sadece yönetici izni(root) ile kullanabiliriz. Örneğin; 'sudo apt purge paket_ismi'
 
@@ -77,7 +81,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/b61e952f-f486-442f-ba73-268687124780"/>
 </div>
 
- <br/>
+- ---
+#### upgrade:
  
 - upgrade, kurulu paketleri günceller. Ama çok paket olduğu için bu iş çok uzun sürer. Örneğin; 'sudo apt upgrade'
 
@@ -85,7 +90,8 @@
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/5d8d32e8-54f5-4397-9d50-874d711dc7e1"/>
 </div>
 
- <br/>
+- ---
+#### list --upgradable:
 
  - list --upgradable, bilgisayarda yüklü olan güncellenebilir tüm uygulamaları görürüz.
 
@@ -98,11 +104,38 @@
 cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanarak paketleri güncellediğini görebiliriz.
  
 - ---
-## dpkg PROGRAMI 
+# dpkg PROGRAMI:
 
+### debian paket kurma:
 - Debian paket yönetim sisteminin temelini oluşturur.
 
+Örnek: Aşağıdaki örnekte leafpad'i kuracağız.
+- İlk başta leafpad'in paketinin yüklü olduğu deb uzantılı dosyayı indirdik. 
+- Aşağıdaki görselde kırmızı ok ile gösterdiğim gibi cd komutu ile deb uzantılı dosyanın olduğu dizine gidiyoruz.
+- Sonra ls komutu ile o dizinde bulunan dosyaları görüntülüyoruz.
+- Aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü 'dpkg -i leafpad_0.8.18.1-5_amd64.deb' paketini yüklerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket yüklenecektir. Ve leafpad'imiz kurulmuş olacak. 
 
+<div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/bf845942-04f4-4439-8316-841d559b8807"/> 
+</div>
+ 
+- ---
+
+### debian paket silme:
+
+Örnek: Aşağıdaki örnekte leafpad'i kaldıracağız.
+- İlk başta aşağıdaki görselde kırmızı ok ile gösterdiğim satırda dpkg -l komutu ile dpkg paketli tüm dosyalar ekranda gözükmesin diye grep leafpad komutunu da ekleyip sadece leafpad'e ait olan dizin ekrana geliyor.
+- Sonra aşağıdaki görselde yeşil ok ile gösterdiğim satır çalışmıyor. Çünkü 'dpkg -r leafpad' paketini silerken yönetici yetkisi yani root ile yapmadık. Ama sarı ok ile gösterdiğim satırdaki gibi başına sudo ekleyip yönetici yetkisini verdiğimiz zaman deb uzantılı paket kaldırılacaktır. Ve leafpad'imiz silinmiş olacak. 
+
+<div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/69341bf3-231e-4e02-9d1b-bbd9abfba3b4"/> 
+</div>    
+
+ <br/>
+
+ - ---
+ - ---
+ 
 # ÖZGÜR YAZILIM DÜNYASI VE GNU/Linux
 
 - Özgür yazılım, bedava yazılım demek değildir kullanıcıların özgürlüklerini savunan yazılımdır.
@@ -127,7 +160,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/4ce820eb-0b18-425e-ba3a-360ba8e46372"/>
 </div>
 
- <br/>
+- ---
 
 Örnek: KDE Plasma 5  --> https://kde.org/tr/plasma-desktop/
 
@@ -137,7 +170,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/d206f0b6-556c-451a-a8cb-46e793d0ec11"/>
 </div>
 
- <br/>
+- ---
 
 Örnek: GNOME  --> https://www.gnome.org/
 
@@ -147,7 +180,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/ba5cce0a-29ce-45dc-9425-ec99441f0076"/>
 </div>
 
- <br/>
+ - ---
 
 Örnek: Unity -->  https://ubuntuunity.org/
 
@@ -157,7 +190,7 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/0d141ca1-b438-484b-99db-d851d7b887f4"/>
 </div>
 
- <br/>
+ - ---
 
 Örnek: xfce4 --> https://www.xfce.org/
 
@@ -168,6 +201,13 @@ cat /etc/apt/sources.list komutu apt'nin internetteki hangi kaynaklara bağlanar
 </div>
 
  <br/>
+
+- Kurulum:
+<div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/3eb2d018-40ce-4936-ae65-1ecc9062cc2e"/> 
+</div>  
+
+- ---
 
 Örnek: mate -->  https://mate-desktop.org/
 
