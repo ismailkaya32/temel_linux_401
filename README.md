@@ -235,6 +235,54 @@
 
 </div>
 
- <br/>
+- ---
 
- 
+# SHELL PROGRAMLAMA (KABUK PROGRAMLAMA) 
+
+## echo:
+
+- Ekrana bir şeyler yazdırmamızı sağlar.
+
+Örnek: Aşağıdaki örnekte ekrana ben ismail yazdırıyorum.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/d9e721e3-daa2-437b-a8ca-16a544a0cbcf"/> 
+</div>      
+
+- ---
+
+### EN YAYGIN KULLANILAN SHELLER (KABUKLAR) :
+
+#### sh : 
+- Unix kabuğudur.
+- İlk kabuk versiyonudur.
+
+#### bash : 
+- ilk başta sh tabanlı iken sonra geliştirmeler ile sh'tan ayrılmıştır.
+- Ve artık daha popüler olan bir kabuktur.
+
+#### dash : 
+- Debian için geliştirilmiştir.
+- bash'a göre 2 kat daha hızlıdır.
+- Daha az sistem kaynağı (CPU,RAM,vb) kullanır.
+
+- ---
+- Aşağıda shell programlama örneklerini adım adım göreceğiz.
+
+- Örnek 1 : Aşağıdaki resimde merhaba.sh 'ın içine yazılanları görüyoruz.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/f0dfa872-375e-4d1c-8389-96ef6208b558"/> 
+</div>   
+
+<br/>
+
+- Öncelikle nano komutu ile merhaba.sh dosyasını oluşturup içine girdik.
+- merhaba.sh 'ın içine girdiğimiz zaman birinci satıra kullanacağımız kabuğun yolunu yazdık.
+- Üçüncü satırda echo komutu ile ekrana ben İSMAİL yazmasını sağladık.
+- Dördüncü satırda merhaba.sh dosyasını çalışırdığımız zaman merhaba.sh dosyasının bulunduğu konuma touch komutu ile ismail.txt dosyasını oluşturdu.
+- Beşinci satırda ismail.txt dosyasının içine tanıştığıma memnun oldum yazmasını sağladık.
+
+...
+...
+...
