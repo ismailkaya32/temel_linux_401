@@ -256,6 +256,13 @@
 #### sh : 
 - Unix kabuğudur.
 - İlk kabuk versiyonudur.
+- dash kabuğuna bağlıdır. Aşağıdaki görselde bir file dosyasına ait sh kabuğunun dash kabuğuna bağlantılı olduğunu görebiliriz.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/c7720e65-1f30-4e77-97a9-fd011bfe5d17"/> 
+</div>   
+
+<br/>
 
 #### bash : 
 - ilk başta sh tabanlı iken sonra geliştirmeler ile sh'tan ayrılmıştır.
@@ -267,7 +274,10 @@
 - Daha az sistem kaynağı (CPU,RAM,vb) kullanır.
 
 - ---
+
 - Aşağıda shell programlama örneklerini adım adım göreceğiz.
+
+ÖRNEK 1: 
 
 Adım 1: Önce oluşturacağımız dosyanın hangi dizinde olmasını istiyorsak o dizine gidiyoruz. Ondan sonra istediğimiz dosyayı nano komutu ile oluşturuyoruz. 
 
@@ -279,7 +289,7 @@ Adım 1: Önce oluşturacağımız dosyanın hangi dizinde olmasını istiyorsak
 
 <br/>
 
-Adım 2 : Sonra nano ile oluşturup açtığımız dosyanın içine yapmak istediklerimzi yazıyoruz.
+Adım 2 : Sonra nano ile oluşturup açtığımız dosyanın içine yapmak istediklerimizi yazıyoruz.
 
 - Yukarıda verilenlere göre ben nano ile oluşturup açtığım merhaba.sh 'ın içine yapmak istediklerimi yazıyorum. Aşağıdaki görselde yapmak istediklerim yazıyor. Görselin altında da yapmak istediklerimi açıkladım.
 
@@ -334,7 +344,36 @@ Adım 4 Alternatifi:
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/240c5272-cb57-4e03-b9ca-ec1c9db55448"/> 
 </div>   
 
+- ---
+
+ * ÖRNEK 1' DE AYRINTILI ADIMLARI ANLATTIĞIM İÇİN DİĞER ÖRNEKLERDE DİREKT İÇİNE YAZILANLARI VE ÇIKTILARI VERECEĞİM !!!
+
+- --- 
+
+ÖRNEK 2: 
+
+Adım 1: deneme1.sh adlı dosya oluşturdum.
+
 <br/>
+
+Adım 2: deneme1.sh 'ın içine yapmak istediklerimi yazdım.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/c2a65149-e1df-431b-b1d7-845011b6a753"/> 
+</div>      
+
+<br/>
+
+Adım 3: Alternatif yolu yani bash komutunu kullanarak  deneme1.sh dosyasını çalıştırıyorum. Ve çıktıyı alıyorum.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/52434977-b9e0-4650-8976-c498bf1be2d9"/> 
+</div>      
+
+- ---
+
+ÖRNEK 3: 
+
 
 ...
 ...
