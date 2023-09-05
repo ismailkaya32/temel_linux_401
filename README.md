@@ -269,7 +269,19 @@
 - ---
 - Aşağıda shell programlama örneklerini adım adım göreceğiz.
 
-- Örnek 1 : Aşağıdaki resimde merhaba.sh 'ın içine yazılanları görüyoruz.
+Adım 1: Önce oluşturacağımız dosyanın hangi dizinde olmasını istiyorsak o dizine gidiyoruz. Ondan sonra istediğimiz dosyayı nano komutu ile oluşturuyoruz. 
+
+- Yukarıda verilen adıma göre ben önce Desktop konumuna gittim. Sonra nano komutu ile merhaba.sh dosyasını oluşturdum. Bunu aşağıda bulunan görselden görebiliriz.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/2dd5c924-80a3-462e-a9b7-042b0861a79d"/> 
+</div>  
+
+<br/>
+
+Adım 2 : Sonra nano ile oluşturup açtığımız dosyanın içine yapmak istediklerimzi yazıyoruz.
+
+- Yukarıda verilenlere göre ben nano ile oluşturup açtığım merhaba.sh 'ın içine yapmak istediklerimi yazıyorum. Aşağıdaki görselde yapmak istediklerim yazıyor. Görselin altında da yapmak istediklerimi açıkladım.
 
  <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/f0dfa872-375e-4d1c-8389-96ef6208b558"/> 
@@ -277,12 +289,54 @@
 
 <br/>
 
+Açıklama:
+
 - Öncelikle nano komutu ile merhaba.sh dosyasını oluşturup içine girdik.
 - merhaba.sh 'ın içine girdiğimiz zaman birinci satıra kullanacağımız kabuğun yolunu yazdık.
 - Üçüncü satırda echo komutu ile ekrana ben İSMAİL yazmasını sağladık.
 - Dördüncü satırda merhaba.sh dosyasını çalışırdığımız zaman merhaba.sh dosyasının bulunduğu konuma touch komutu ile ismail.txt dosyasını oluşturdu.
 - Beşinci satırda ismail.txt dosyasının içine tanıştığıma memnun oldum yazmasını sağladık.
 
+<br/>
+
+Adım 3: Yapmak istediklerimizi yazıp ctrl+x kısayolu ile dosyanın içine kaydediyoruz. Ve dosyamız kaydettiğimiz konumda görünüyor olacak. 
+
+- Yukarıda verilenlere göre ben ctrl+x kısayolu ile yapmak istediklerimi dosyanın içine kaydediyorum. Ve dosyam Desktop dizininde gözüküyor. Aşağıda bulunan görselden bunu görebiliriz.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/3e421fe3-2683-48c5-b5bf-40bd3c2a13dc"/> 
+</div>    
+
+<br/>
+
+Adım 4: Oluşturduğumuz dosyayı çalıştırmak için dosyanın bulunduğu dizine gidip yöneticiye çalıştırma yetkisini atamak gerekiyor. Bunun için aşağıdaki görsel üzerinden adımları takip edebiliriz. Aşağıda bulunan görselin altında açıklamaları yazmaktadır.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/066d2fb7-adc2-4f49-8d8c-4f6114b2937e"/> 
+</div>     
+
+<br/>
+
+Açıklama:
+
+- Yukarıda verilenlere göre merhaba.sh dosyasını çalıştırmak için önce kırmızı okla gösterilen yerde ls komutu ile Desktop dizininde bulunan dosyaları listeledim. Orada merhaba.sh 'ı buldum.
+- Sonra yeşil okla gösterilen yerde ./merhaba.sh komutu ile dosyayı çalıştımak istedim ama bu dosyayı çalıştırma yetkimin olmadığına dair uyarı aldım.
+- Öyle olunca mavi okla gösterilen yerde ls -al komutu ile Desktop dizininde bulunan dosyaların izinlerine baktım. Ve merhaba.sh dosyasında yönetici olarak çalıştırma yetkimin olmadığını gördüm.
+- Bundan dolayı sarı okla gösterilen yerde chmod +x komutu ile merhaba.sh dosyasına yönetici çalıştırma yetkisini veriyorum.
+- Mor okla gösterilen yerde ll komutu ile (ls -al komutu) merhaba.sh dosyasına yöneticinin çalıştırma yetkisinin verilip verilmediğini kontrol ediyorum. Ve verildiğini görüyorum.
+- En son olarakta turuncu okla gösterilen ./merhba.sh komutu ile dosyayı çalıştırıyorum. Ve dosyanın çalıştığını görebiliyorum. Ekrana ben İSMAİL yazarken Desktop dizinine de ismail.txt dosyasının oluştuğunu görüyorum.
+
+Adım 4 Alternatifi:
+
+- Direkt yönetici yetkisi vermeye gerek kalmadan bash komutu ile dosyayı çalıştırabiliriz. Mesela aşağıdaki görselde gördüğünüz üzere bash komutu ile direkt merhaba.sh komutunu çalıştırıp ekrana ben İSMAİL yazarken Desktop dizinine de ismail.txt dosyasının oluştuğunu görüyoruz.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/240c5272-cb57-4e03-b9ca-ec1c9db55448"/> 
+</div>   
+
+<br/>
+
 ...
 ...
 ...
+
