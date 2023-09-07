@@ -365,9 +365,10 @@ Açıklama:
 - Öncelikle kimlikdogrulama.sh 'ın içine girdiğimiz zaman birinci satıra kullanacağımız kabuğun yolunu yazdık. 
 - Kırmızı ok ile gösterilen kısımda kullanıcının ismini ve parolasını yazmasını sağladık.
 - Yeşil ok ile gösterilen kısımda eğer kullanıcı, kullanıcı adına ismail ve parolaya 12345 yazarsa merhaba ismail ! Hosgeldinnn yazısı çıkacak iken kullanıcı adı kısmına ya da parola kısmına yanlış bir şey yazarsa Giris basarisiz, tekrar deneyin yazısının ekrana gelmesini sağladık.
- - Mor ok ile gösterilen kısımda sayac adlı değişken ismi verip while-do döngüsü ile giriş doğru ise platform yükleniyor yazısını ekrana basmasını sağladık.
+ - Mor ok ile gösterilen kısımda sayac adlı değişken ismi verip while-do döngüsü ile giriş doğru veya yanlış ise sayac durumuna göre platform yükleniyor yazısını ekrana basmasını sağladık.
  - Sarı ok ile gösterilen kısımda yükleniyor yazısını 0,3 saniyede bir gelmesini sağladık.
 
+<br/>
 
 Adım 3: Alternatif yolu yani bash komutunu kullanarak  kimlikdogrulama.sh dosyasını çalıştırıyorum. Ve çıktıyı alıyorum.
 
@@ -382,8 +383,8 @@ Adım 3: Alternatif yolu yani bash komutunu kullanarak  kimlikdogrulama.sh dosya
 * Kullanıcı adının ve parolanın yanlış girilmesi ile ortaya çıkan çıktı:
 
  <div align="center">
-	<img src=""/> 
-</div>       
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/d85e4fd5-a208-47f3-9396-0139b13c551e"/> 
+</div>    
 
 - ---
 
