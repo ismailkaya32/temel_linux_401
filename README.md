@@ -311,7 +311,7 @@ Açıklama:
 
 Adım 3: Yapmak istediklerimizi yazıp ctrl+x kısayolu ile dosyanın içine kaydediyoruz. Ve dosyamız kaydettiğimiz konumda görünüyor olacak. 
 
-- Yukarıda verilenlere göre ben ctrl+x kısayolu ile yapmak istediklerimi dosyanın içine kaydediyorum. Ve dosyam Desktop dizininde gözüküyor. Aşağıda bulunan görselden bunu görebiliriz.
+- Yukarıda verilenlere göre ben ctrl+x kısayolu ile yapmak istediklerimi dosyanın içine kaydediyorum. Ve oluşturduğum dosya Desktop dizininde gözüküyor. Aşağıda bulunan görselden bunu görebiliriz.
 
  <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/3e421fe3-2683-48c5-b5bf-40bd3c2a13dc"/> 
@@ -346,11 +346,52 @@ Adım 4 Alternatifi:
 
 - ---
 
- * ÖRNEK 1' DE AYRINTILI ADIMLARI ANLATTIĞIM İÇİN DİĞER ÖRNEKLERDE DİREKT İÇİNE YAZILANLARI VE ÇIKTILARI VERECEĞİM !!!
+ÖRNEK 2: 
+
+Adım 1: kimlikdogrulama.sh adlı dosya oluşturdum.
+
+<br/>
+
+Adım 2: kimlikdogrulama.sh 'ın içine yapmak istediklerimi yazdım. Aşağıdaki görselde yapmak istediklerim yazıyor. Görselin altında da yapmak istediklerimi açıkladım.
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/3e0abe4e-cdd2-4599-9b11-bcd2ccfd9156"/>   
+</div>       
+
+<br/>
+
+Açıklama:
+
+- Öncelikle kimlikdogrulama.sh 'ın içine girdiğimiz zaman birinci satıra kullanacağımız kabuğun yolunu yazdık. 
+- Kırmızı ok ile gösterilen kısımda kullanıcının ismini ve parolasını yazmasını sağladık.
+- Yeşil ok ile gösterilen kısımda eğer kullanıcı, kullanıcı adına ismail ve parolaya 12345 yazarsa merhaba ismail ! Hosgeldinnn yazısı çıkacak iken kullanıcı adı kısmına ya da parola kısmına yanlış bir şey yazarsa Giris basarisiz, tekrar deneyin yazısının ekrana gelmesini sağladık.
+ - Mor ok ile gösterilen kısımda sayac adlı değişken ismi verip while-do döngüsü ile giriş doğru ise platform yükleniyor yazısını ekrana basmasını sağladık.
+ - Sarı ok ile gösterilen kısımda yükleniyor yazısını 0,3 saniyede bir gelmesini sağladık.
+
+
+Adım 3: Alternatif yolu yani bash komutunu kullanarak  kimlikdogrulama.sh dosyasını çalıştırıyorum. Ve çıktıyı alıyorum.
+
+* Kullanıcı adının ve parolanın doğru girilmesi ile ortaya çıkan çıktı:
+
+ <div align="center">
+	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/ae0ba910-ddac-4231-aa58-7d8c27568263"/> 
+</div>       
+
+<br/>
+
+* Kullanıcı adının ve parolanın yanlış girilmesi ile ortaya çıkan çıktı:
+
+ <div align="center">
+	<img src=""/> 
+</div>       
+
+- ---
+
+ * ÖRNEK 1 ve 2' DE AYRINTILI ADIMLARI ANLATTIĞIM İÇİN DİĞER ÖRNEKte DİREKT İÇİNE YAZILANLARI VE ÇIKTILARI VERECEĞİM !!!
 
 - --- 
 
-ÖRNEK 2: 
+ÖRNEK 3: 
 
 Adım 1: deneme1.sh adlı dosya oluşturdum.
 
@@ -369,13 +410,3 @@ Adım 3: Alternatif yolu yani bash komutunu kullanarak  deneme1.sh dosyasını �
  <div align="center">
 	<img src="https://github.com/ismailkaya32/temel_linux_401/assets/122615472/52434977-b9e0-4650-8976-c498bf1be2d9"/> 
 </div>      
-
-- ---
-
-ÖRNEK 3: 
-
-
-...
-...
-...
-
